@@ -3,7 +3,7 @@
 
 #define NUM_PINS 8
 
-typedef enum { LOW = 0, HIGH = 1} Pinstate;
+typedef enum { LOW = 0, HIGH = 1} PinState;
 
 void gpio_init();
 void gpio_set_pin(int pin, PinState state);
