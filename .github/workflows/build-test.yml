@@ -24,6 +24,6 @@ jobs:
 
       - name: Run tests
         run: |
-          gcc -o tests/gpio_test tests/gpio_test.c src/gpio.c
+          gcc -I./src -o tests/gpio_test tests/gpio_test.c src/gpio.c
           ./tests/gpio_test
 
